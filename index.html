@@ -11,75 +11,51 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet" />
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Personal Portfolio with Bootstrap</title>
 </head>
 
 <body>
-    <!--Navigation Bar - Top of the website with links to other parts of the portfolio-->
-    <header class="navBar">
-        <div class="card text-center">
-            <div class="card-body">
-                <a href="#about-me" class="btn btn-primary">About Me</a>
-                <a href="#work" class="btn btn-primary">Work</a>
-                <a href="#skills" class="btn btn-primary">Skills</a>
-                <a href="#contact" class="btn btn-primary">Contact Me</a>
+    <header>
+        <!--Navigation Bar - Top of the website with links to other parts of the portfolio-->
+        <div class="card text-left navigBar">
+            <div class="card-header container-fluid row align-items-start">
+                <h2 class="col ">Gloria Alori - Web Developer</h2>
+                <ul class="col nav nav-tabs card-header-tabs justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link  btn-primary" aria-current="true" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="true" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="true" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="true" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-
-    <div class="card text-center">
-        <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active btn-primary" aria-current="true" href="#about-me">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="true" href="#work">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="true" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="true" href="#contact">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <header class="navBar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#about-me">About Me</a>
-                <a class="navbar-brand" href="#work">Work</a>
-                <a class="navbar-brand" href="#">Navbar</a>
-                <a class="navbar-brand" href="#">Navbar</a>
-            </div>
-        </nav>
-    </header>
-
-
-
     </header>
 
     <!--Hero section with jumbotron featuring pic, name, and other imp info-->
     <section id="hero">
-        <div class="jumbotron jumbotron-fluid">
-            <h1 class="display-4">Gloria Alori - Web Developer</h1>
-            <div class="container">
-                <img src="./images/sarah-sellers-black-cartoons-girl.jpg" alt="Newest team member!" height="200px "
+        <div class="jumbotron">
+            <div class="container ">
+                <img class = "row-cols-1" src="./images/sarah-sellers-black-cartoons-girl.jpg" alt="Newest team member!" height="200px "
                     width="200px" />
-                <p class="lead">Awesome Coding Noob</p>
+                <p class="lead row-cols-1">Awesome Coding Noob</p>
             </div>
         </div>
     </section>
 
     <!--About me section-->
-    <section id="about-me">
-        <div class="jumbotron jumbotron-fluid">
-            <h2>About Me</h2>
-            <div>
+    <section id="about-me" class="container-fluid">
+        <div class="jumbotron row-align-items-start div row align-items-md-stretch">
+            <h2 class="col-2">About Me</h2>
+            <div class="col-10">
                 <p>
                     When I am an old woman I shall wear purple With a red hat which
                     doesn't go, and doesn't suit me. And I shall spend my pension on
@@ -112,15 +88,46 @@
     </section>
 
     <!--Work section with grid display - and bootstrap cards for each project -->
-    <section id="work">
-
-
+    <section id="work" class="div row">
+        <h2 class="heading col-2">Work</h2>
+        <div class="container col-10">
+            <div class="project3 card">
+                <a href="https://github.com/cbfacademy/java-currency-converter-assessment-Gloal">
+                    <h3>Currency Convertor </h3>
+                    <p>Java</p>
+                </a>
+            </div>
+            <div class="project2 card">
+                <a href="https://gloal.github.io/frontend-module-one-website/">
+                    <h3>My First Website</h3>
+                    <p>HTML/CSS</p>
+                </a>
+            </div>
+            <div class="project1 card">
+                <a href="https://gloal.github.io/prework-study-guide/">
+                    <h3>BootCamp Prework</h3>
+                    <p>JavaScript/HTML/CSS</p>
+                </a>
+            </div>
+            <div class="project4 card">
+                <a href="https://github.com/Gloal/CRM">
+                    <h3>Dream Project</h3>
+                    <p>HTML/CSS/JavaScript/Java</p>
+                </a>
+            </div>
+            <div class="project5 card">
+                <a href="https://github.com/iamvijay98/Social-Media-App-Frontend">
+                    <h3>Dream Project2</h3>
+                    <p>JavaScript/CSS/HTML</p>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!--Skills section - List out skills you expect to learn from the bootcamp-->
-    <section id="skills">
-        <h1>Skills</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+    <section id="skills" class="div row align-items-md-strech">
+        <h2 class="col-2">Skills</h2>
+        <div class="col-10 row-cols-1 row-cols-m-3">
             <div class="col">
                 <div class="card">
                     <h5 class="card-title">JavaScript</h5>
@@ -143,14 +150,45 @@
             </div>
             <div class="col">
                 <div class="card">
+                    <h5 class="card-title">Java</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
                     <h5 class="card-title">NodeJS</h5>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- contact -->
+    <section class="page-section div row " id="contact">
+        <h2 class="col-2">Contact Me</h2>
+        <div class="col-10 contact-card">
+            <nav id="contact-card-nav" class="card-deck text-center row row-cols-m-3">
+                <rect class="card rounded-pill border-info col justify-content-center"><a
+                        href="#contact">555-67-27382</a></rect>
+                <rect class="card rounded-pill border-info col justify-content-center"><a
+                        href="mailto: email@here.com">email@here.com</a></rect>
+                <rect class="card rounded-pill border-info col justify-content-center"><a
+                        href="https://github.com/Gloal">GitHub</a></rect>
+            </nav>
+        </div>
+    </section>
+    </main>
+
     <!--Footer Section with hyperlinks and hover effect-->
-    <footer id="contact"></footer>
+    <footer class="disclaimer text-center">
+        <div>
+            <p class>
+                The above info is not an accurate portfolio - DO NOT call the number
+                listed.
+                <br />
+                &#128519 Do not send an email to the made-up email address either.
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

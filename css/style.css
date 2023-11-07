@@ -1,0 +1,47 @@
+    :root{
+    --primary-color: #550A46;
+    --secondary-color: #344a86;
+    --highlight-color: #9ACEFF;
+    --background-color1: #617be3;
+    --background-color2: #FCF5ED;
+    --textbox-font-color: black;
+    --section-title-font: 3rem;
+  }
+
+header, footer, .navigBar{
+    background-color: var(--background-color1);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+  margin: 00px;
+}
+
+section {
+    padding: 10px;
+}
+
+section h2{
+    border-right: solid var(--primary-color) 3px;
+}
+
+#hero{
+    background-image: url("../images/02-hero-bg.jpg");
+    background-size: cover;
+}
+
+.nav-link:hover{
+background-color: var(--highlight-color);
+}
+
+#contact-card-nav rect{
+height: 75px; 
+width: 150px; 
+margin: 20px;
+}
+
+rect:hover{
+background-color: var(--highlight-color);
+    }
