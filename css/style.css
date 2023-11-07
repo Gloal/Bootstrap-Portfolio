@@ -1,4 +1,5 @@
-    :root{
+  
+  :root{
     --primary-color: #550A46;
     --secondary-color: #344a86;
     --highlight-color: #9ACEFF;
@@ -7,9 +8,13 @@
     --textbox-font-color: black;
     --section-title-font: 3rem;
   }
+section{
+    background-color: var(--background-color2);
+}
 
 header, footer, .navigBar{
     background-color: var(--background-color1);
+    color: var(--background-color2)
 }
 
 h1,
@@ -45,3 +50,44 @@ margin: 20px;
 rect:hover{
 background-color: var(--highlight-color);
     }
+
+    
+.project1{
+    background-image: url(../images/02-portfolio-1.jpg);
+    padding-top: 300px;
+  }
+  
+  .project2{
+    background-image: url(../images/02-portfolio-2.jpg);
+    padding-top: 120px;
+  }
+  
+  .project3{
+    background-image: url(../images/02-portfolio-3.jpg);
+    padding-top: 120px;
+  
+  }
+  
+  .project4{
+    background-image: url(../images/xr-7499160_1280.jpg);
+    padding-top: 120px;
+  
+  }
+  
+  .project5{
+    background-image: url(../images/ales-nesetril-unsplash.jpg);
+    padding-top: 120px;
+  }
+
+  .project1,.project2,.project3,.project4,.project5{
+    background-size: cover;
+    opacity: 0.7;
+    border: var(--highlight-color) solid 10px;
+
+  }
+
+  .container div:hover
+{
+  font: 150% sans-serif;
+  opacity: 1.0;
+}
